@@ -15,7 +15,7 @@ const Header = () => {
                 </a>
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="#corporateWellness" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Corporate Wellness</span>
                 </a>
             </li>
@@ -26,24 +26,24 @@ const Header = () => {
                 </a>
               {view &&   <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-500 rounded-2xl md:shadow-lg md:rounded-b ">
                     <li>
-                        <a href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <a href="#weight-loss" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
                            Optimal weight loss diet program
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <a href="#weight-loss" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
                         Optimal weight loss diet program
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <a href="#weight-loss" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
                         Optimal weight loss diet program
                         </a>
                     </li>
                 </ul>}
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="#blog" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Health Read</span>
                 </a>
             </li>
@@ -53,12 +53,7 @@ const Header = () => {
                 </a>
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="#contact" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Contact Us</span>
                 </a>
             </li>
