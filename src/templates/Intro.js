@@ -38,7 +38,7 @@ export default function Example() {
       </div>
       <div className="relative h-full w-full">
         <video loop autoplay="" muted src="https://assets.mixkit.co/videos/preview/mixkit-woman-standing-on-bathroom-scales-24849-large.mp4"  className="h-full w-full object-cover" />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-white/30">
         <div className="w-screen -mt-10">
                 <Header/> 
             </div>
@@ -46,14 +46,14 @@ export default function Example() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-red-700"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-green-900 to-red-700"
             >
               Embark on a Flavorful Weight Maintenance Journey
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 text-black bold"
             >
              Don't let the misconception that weight loss means boring, tasteless meals hold you back. At [Your Business Name], we believe that healthy eating can be enjoyable and satisfying. Join us on a flavorful weight loss journey and discover a world of tasty recipes that will help you achieve your goals without sacrificing flavor.
             </Typography>
@@ -70,7 +70,7 @@ export default function Example() {
       </div>
       <div className="relative h-full w-full">
         <video loop autoplay="" muted src="https://assets.mixkit.co/videos/preview/mixkit-buying-fruit-from-a-market-vendor-22688-large.mp4"  className="h-full w-full object-cover" />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-white/30">
         <div className="w-screen -mt-10">
                 <Header/> 
             </div>
@@ -78,14 +78,14 @@ export default function Example() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-red-700"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-green-900 to-red-700"
             >
               Locally Sourced, Fresh Ingredients
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 text-black bold"
             >
              We understand the importance of using fresh, locally sourced ingredients in your meals. That's why we have established strong partnerships with local farmers, suppliers, and grocery stores. By sourcing our ingredients locally, we ensure that you receive the highest quality produce, packed with nutrients and bursting with flavor.
               and renews a weary spirit.
