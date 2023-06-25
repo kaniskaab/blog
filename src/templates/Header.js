@@ -15,9 +15,9 @@ const Header = () => {
                 </a>
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <link href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Corporate Wellness</span>
-                </a>
+                </link>
             </li>
             <li class="relative parent" onMouseEnter={()=>setView(true)} onMouseLeave={()=>setView(false)}>
                 <a href="#plans" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl space-x-2">
@@ -26,26 +26,26 @@ const Header = () => {
                 </a>
               {view &&   <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-500 rounded-2xl md:shadow-lg md:rounded-b ">
                     <li>
-                        <a href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <link href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
                            Optimal weight loss diet program
-                        </a>
+                        </link>
                     </li>
                     <li>
-                        <a href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <link href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
                         Optimal weight loss diet program
-                        </a>
+                        </link>
                     </li>
                     <li>
-                        <a href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <link href="#" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
                         Optimal weight loss diet program
-                        </a>
+                        </link>
                     </li>
                 </ul>}
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <link href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Health Read</span>
-                </a>
+                </link>
             </li>
             <li>
                 <a href="#faq" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
@@ -53,14 +53,14 @@ const Header = () => {
                 </a>
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <link href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Blog</span>
-                </a>
+                </link>
             </li>
             <li>
-                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <link href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
                     <span>Contact Us</span>
-                </a>
+                </link>
             </li>
         </ul>
         <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
