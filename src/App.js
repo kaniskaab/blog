@@ -1,15 +1,15 @@
-import About from "./templates/About";
-import Faq from "./templates/Faq";
-import Intro from "./templates/Intro";
-import Plans from "./templates/Plans";
-
+import Home from "./Home";
+import { Routes, Route,BrowserRouter } from "react-router-dom"
+import BlogPage from "./templates/BlogPage";
 function App() {
   return (
     <div className="App">
-      <Intro/>
-      <About/>
-      <Plans/>
-      <Faq/>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="blog" element={ <BlogPage/> } />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

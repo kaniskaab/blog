@@ -8,7 +8,8 @@ module.exports = withMT({
       fontFamily:{
         mono:"'Montserrat', serif",
         ubu:"'Ubuntu',serif",
-        dance:"'Dancing Script',serif"
+        dance:"'Dancing Script',serif",
+        poppins:"'Poppins', serif"
       },
     },
   },
