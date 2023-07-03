@@ -1,59 +1,60 @@
 import React, { useState } from "react";
 
-const Header = () => {
+const Header = ({color}) => {
     const [view, setView] = useState(false);
   return (
     <>
       <nav class="flex px-4 items-center relative">
         <div class="text-lg font-bold md:py-0 py-4">
-            Logo
+            <a href="/">Logo</a>
+            
         </div>
-        <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0 text-white">
+        <ul class={`md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0  ${color?"text-black":"text-white"}`}>
             <li>
-                <a href="#about" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="about" class="flex md:inline-flex p-4 items-center hover:bg-black/30 rounded-[3px]">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="#corporateWellness" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="#corporateWellness" class="flex md:inline-flex p-4 items-center hover:bg-black/30 rounded-[3px]">
                     <span>Corporate Wellness</span>
                 </a>
             </li>
             <li class="relative parent" onMouseEnter={()=>setView(true)} onMouseLeave={()=>setView(false)}>
-                <a href="#plans" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl space-x-2">
+                <a href="#plans" class="flex justify-between md:inline-flex p-4 items-center hover:bg-black/30 rounded-[3px] space-x-2">
                     <span>Plans</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                 </a>
-              {view &&   <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-gray-500 rounded-2xl md:shadow-lg md:rounded-b ">
+              {view &&   <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white/50 hover:bg-white text-black rounded-[3px] md:shadow-lg md:rounded-b shadow-xl ">
                     <li>
-                        <a href="#weight-loss" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <a href="show-plans" class="flex px-4 py-3 hover:bg-black/30 rounded-[3px]">
                            Optimal weight loss diet program
                         </a>
                     </li>
                     <li>
-                        <a href="#weight-loss" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <a href="show-plans" class="flex px-4 py-3 hover:bg-black/30 rounded-[3px]">
                         Optimal weight loss diet program
                         </a>
                     </li>
                     <li>
-                        <a href="#weight-loss" class="flex px-4 py-3 hover:bg-gray-600 rounded-2xl">
+                        <a href="show-plans" class="flex px-4 py-3 hover:bg-black/30 rounded-[3px]">
                         Optimal weight loss diet program
                         </a>
                     </li>
                 </ul>}
             </li>
             <li>
-                <a href="#blog" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="health-reads" class="flex md:inline-flex p-4 items-center hover:bg-black/30 rounded-[3px]">
                     <span>Health Read</span>
                 </a>
             </li>
             <li>
-                <a href="#faq" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="faq" class="flex md:inline-flex p-4 items-center hover:bg-black/30 rounded-[3px]">
                     <span>FAQ</span>
                 </a>
             </li>
             <li>
-                <a href="#contact" class="flex md:inline-flex p-4 items-center hover:bg-gray-600 rounded-2xl">
+                <a href="#contact" class="flex md:inline-flex p-4 items-center hover:bg-black/30 rounded-[3px]">
                     <span>Contact Us</span>
                 </a>
             </li>

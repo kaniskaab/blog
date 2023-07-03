@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Autocomplete, TextField } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
+import Header from "./Header";
 
 import img from "../images/fruit1.png";
 import img1 from "../images/fruit1.png";
 import img2 from "../images/fruit2.png";
 import img3 from "../images/fruit3.png";
+import Footer from "./Footer";
 
 const content = {
   image: `${img}`,
@@ -152,13 +154,15 @@ export default function BlogPage() {
   console.log(flatProps);
   const [value, setValue] = useState();
   return (
+    <>
+    <Header color="black"/>
     <div className="h-screen flex font-poppins">
       <div className="w-4/5 h-screen overflow-y-auto overflow-x-hidden">
       <motion.div
                     initial={{ opacity: 0.5, y:-100 }}
                     animate={{ opacity: 1, y:0 }}
                     exit={{ opacity: 0, x: -100 }}
-                    transition={{ delay: 0.5 }}
+                    transition={{ ease: "easeOut", duration: 1 }}
                     >
         <div className="w-full justify-center flex text-[28px] m-3 font-bold font-poppins">
           {content.heading}
@@ -294,5 +298,7 @@ export default function BlogPage() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

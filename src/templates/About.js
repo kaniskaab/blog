@@ -1,14 +1,17 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import img from "../images/1.png";
-
+import Header from "./Header";
+import Footer from "./Footer";
 export default function About() {
   return (
+    <>
     <div
       className=" border-b overflow-hidden bg-contain"
       id="about"
       style={{ backgroundImage: `url(${img})` }}
     >
+      <Header color="black"/>
       <div
         className="container my-24 mx-auto md:px-6 h-screen" >
         <div className=" w-4/5 ml-auto text-center text-green-900 text-3xl font-ubu">
@@ -47,6 +50,8 @@ export default function About() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

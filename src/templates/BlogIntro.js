@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import Header from "./Header";
 import SideArrow from "../SVG/SideArrow";
 import BlogDisplay from "./BlogDisplay";
+import Footer from "./Footer";
+
 const data = [
     { 
         "id":1,
@@ -30,8 +33,9 @@ export const BlogIntro = ()=>
 
     return (
         <>
-        <text className="h-auto w-full items-center flex justify-center text-3xl text-bold font-poppins bg-[#D9F49E] py-10 text-white">Blog Section</text>
-        <div className="flex h-full bg-[#D9F49E]">
+        <Header color="black"/>
+        <text className="h-auto w-full items-center flex justify-center text-3xl text-bold font-poppins py-10 text-black">Health Reads</text>
+        <div className="flex h-full">
          
         <div className=" w-[440px] flex justify-center font-poppins border-r ">
             <div className="h-full w-[300px] flex flex-col">
@@ -63,6 +67,7 @@ export const BlogIntro = ()=>
         </div>
         <BlogDisplay {...{id}}/>
         </div>
+        <Footer/>
         </>
     )
 }

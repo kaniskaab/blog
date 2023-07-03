@@ -160,7 +160,7 @@ export default function BlogDisplay({id}) {
   }, []);
     const staggerDelay = 0.4
   return (
-    <div className='w-[800px] h-auto flex font-poppins items-center justify-center bg-[#D9F49E] ' ref={divsContainerRef}>
+    <div className='w-[800px] h-auto flex font-poppins items-center justify-center' ref={divsContainerRef}>
         <div className='h-auto w-[750px] flex flex-col '>
             <text className='text-[#0f1935] text-[24px] font-poppins font-bold leading-[32px]'>Latest</text>
             <div className=" flex flex-wrap justify-center ">
@@ -175,7 +175,7 @@ export default function BlogDisplay({id}) {
                     initial={{ opacity: 0, z: -100, y:-100 }}
                     animate={{ opacity: 1, z: 0, y:0 }}
                     exit={{ opacity: 0, x: -100 }}
-                    transition={{ delay: staggerDelay }}
+                    transition={{ ease: "easeOut", duration: 1 }}
                     >
                       <a href='blog'>
                         <div className='h-[280] w-[350] flex flex-col justify-around items-center p-1 hover:bg-white/50 rounded-[5px] hover:scale-105 transition-all ease-in-out duration-300'>
